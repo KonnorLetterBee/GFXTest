@@ -1,0 +1,9 @@
+This project is a testbed for simple Android graphics.  The goal for this project is to be able to draw multiple elements to the screen and be able to move them around by touching and dragging.
+
+Usage:  This repo contains the root of the project's Eclipse directory.  Import into Eclipse using File > Import > Existing Projects Into Workspace and by browsing to the checkout location.  If you're having problems, ensure that you have the proper Android development tools and SDK levels (this app uses SDK 7, Android 2.1, for compatibility across most devices)
+
+	/src/com/cperrigo/gfxtest/MainActivity.java -- the main activity from which the application runs, starts by making the whole screen a custom canvas (TouchExampleView)
+
+	/src/com/cperrigo/gfxtest/TouchExampleView.java -- the custom view the application runs, contains structure for adding multiple drawable elements and moving them around one by one by touching and dragging them
+
+	DrawObject -- a small inner class that contains the Drawable object of an object to be drawn, and an ordered pair (x, y) for coordinates at which to draw the object
